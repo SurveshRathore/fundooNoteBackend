@@ -1,0 +1,808 @@
+2023-01-24 10:22:11.3198|0|DEBUG|Program|init main 
+2023-01-24 10:22:25.3007|12|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider 
+2023-01-24 10:22:29.8763|1|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting 
+2023-01-24 10:22:31.3336|63|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Rathour\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-01-24 10:22:32.8343|37|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\Rathour\AppData\Local\ASP.NET\DataProtection-Keys\key-1fc0a2f5-3e7d-4b6a-bf39-bc9beac55fd8.xml'. 
+2023-01-24 10:22:36.6007|18|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {1fc0a2f5-3e7d-4b6a-bf39-bc9beac55fd8}. 
+2023-01-24 10:22:36.9125|13|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver|Considering key {1fc0a2f5-3e7d-4b6a-bf39-bc9beac55fd8} with expiration date 2023-03-27 09:25:20Z as default key. 
+2023-01-24 10:22:36.9391|0|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60 
+2023-01-24 10:22:36.9475|51|DEBUG|Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor|Decrypting secret element using Windows DPAPI. 
+2023-01-24 10:22:36.9475|0|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60 
+2023-01-24 10:22:36.9619|4|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC. 
+2023-01-24 10:22:36.9619|3|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC. 
+2023-01-24 10:22:36.9735|2|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider|Using key {1fc0a2f5-3e7d-4b6a-bf39-bc9beac55fd8} as the default key. 
+2023-01-24 10:22:36.9735|65|DEBUG|Microsoft.AspNetCore.DataProtection.Internal.DataProtectionHostedService|Key ring with default key {1fc0a2f5-3e7d-4b6a-bf39-bc9beac55fd8} was loaded during application startup. 
+2023-01-24 10:22:39.1614|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer|Using development certificate: CN=localhost (Thumbprint: A97F343284D0AE9D116BA6CFF6056E23DB0A5CFC) 
+2023-01-24 10:22:39.6679|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7102 
+2023-01-24 10:22:39.8726|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5102 
+2023-01-24 10:22:39.8726|13|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly FundooNotesApp 
+2023-01-24 10:22:39.8726|13|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh 
+2023-01-24 10:22:39.8726|13|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net 
+2023-01-24 10:22:39.8726|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-01-24 10:22:39.8726|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-01-24 10:22:39.8726|0|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\dotnet\FundooNotesApp\FundooNotesApp\ 
+2023-01-24 10:22:39.8726|2|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started 
+2023-01-24 10:22:39.8882|6|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMNTOR93P1HU" received FIN. 
+2023-01-24 10:22:39.9009|39|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMNTOR93P1HU" accepted. 
+2023-01-24 10:22:39.9009|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMNTOR93P1HU" started. 
+2023-01-24 10:22:40.8318|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection. System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-01-24 10:22:44.9508|39|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMNTOR93P1HV" accepted. 
+2023-01-24 10:22:45.6571|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMNTOR93P1HV" started. 
+2023-01-24 10:22:45.6909|2|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMNTOR93P1HU" stopped. 
+2023-01-24 10:22:45.7631|7|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMNTOR93P1HU" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2023-01-24 10:22:46.1484|3|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HMNTOR93P1HV established using the following protocol: Tls12 
+2023-01-24 10:22:46.3506|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending SETTINGS frame for stream ID 0 with length 18 and flags NONE. 
+2023-01-24 10:22:46.3506|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0. 
+2023-01-24 10:22:46.3717|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" received SETTINGS frame for stream ID 0 with length 30 and flags NONE. 
+2023-01-24 10:22:46.3717|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending SETTINGS frame for stream ID 0 with length 0 and flags ACK. 
+2023-01-24 10:22:46.3717|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" received WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0. 
+2023-01-24 10:22:46.3717|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" received HEADERS frame for stream ID 1 with length 460 and flags END_STREAM, END_HEADERS, PRIORITY. 
+2023-01-24 10:22:46.5343|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" received SETTINGS frame for stream ID 0 with length 0 and flags ACK. 
+2023-01-24 10:22:46.5945|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7102/swagger/index.html - - 
+2023-01-24 10:22:46.8233|0|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed. 
+2023-01-24 10:22:46.8233|2|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2023-01-24 10:22:47.0007|1000|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/index.html' 
+2023-01-24 10:22:47.0007|2|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints 
+2023-01-24 10:22:47.6547|1|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup is scheduled to include browser refresh script injection. 
+2023-01-24 10:22:47.8284|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending HEADERS frame for stream ID 1 with length 66 and flags END_HEADERS. 
+2023-01-24 10:22:49.0413|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending DATA frame for stream ID 1 with length 1024 and flags NONE. 
+2023-01-24 10:22:49.0413|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending DATA frame for stream ID 1 with length 1024 and flags NONE. 
+2023-01-24 10:22:49.0413|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending DATA frame for stream ID 1 with length 1024 and flags NONE. 
+2023-01-24 10:22:49.0413|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending DATA frame for stream ID 1 with length 1024 and flags NONE. 
+2023-01-24 10:22:49.0413|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending DATA frame for stream ID 1 with length 995 and flags NONE. 
+2023-01-24 10:22:49.0413|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending DATA frame for stream ID 1 with length 65 and flags NONE. 
+2023-01-24 10:22:49.0413|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending DATA frame for stream ID 1 with length 16 and flags NONE. 
+2023-01-24 10:22:49.0656|2|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup was updated to include browser refresh script injection. 
+2023-01-24 10:22:49.0682|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending DATA frame for stream ID 1 with length 0 and flags END_STREAM. 
+2023-01-24 10:22:49.0949|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7102/swagger/index.html - - - 200 - text/html;charset=utf-8 2494.5375ms 
+2023-01-24 10:22:49.1993|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" received HEADERS frame for stream ID 3 with length 108 and flags END_STREAM, END_HEADERS, PRIORITY. 
+2023-01-24 10:22:49.1993|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - - 
+2023-01-24 10:22:49.2129|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending HEADERS frame for stream ID 3 with length 90 and flags END_HEADERS. 
+2023-01-24 10:22:49.2129|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending DATA frame for stream ID 3 with length 11998 and flags NONE. 
+2023-01-24 10:22:49.2362|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending DATA frame for stream ID 3 with length 0 and flags END_STREAM. 
+2023-01-24 10:22:49.2362|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 31.9681ms 
+2023-01-24 10:22:49.4355|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" received HEADERS frame for stream ID 5 with length 57 and flags END_STREAM, END_HEADERS, PRIORITY. 
+2023-01-24 10:22:49.4355|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7102/_vs/browserLink - - 
+2023-01-24 10:22:49.7118|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending HEADERS frame for stream ID 5 with length 119 and flags END_HEADERS. 
+2023-01-24 10:22:49.7118|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending DATA frame for stream ID 5 with length 9986 and flags NONE. 
+2023-01-24 10:22:49.7118|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-01-24 10:22:49.7118|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-01-24 10:22:49.7118|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-01-24 10:22:49.7118|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-01-24 10:22:49.7118|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-01-24 10:22:49.7118|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-01-24 10:22:49.7118|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-01-24 10:22:49.7118|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-01-24 10:22:49.7118|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-01-24 10:22:49.7118|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-01-24 10:22:49.7118|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-01-24 10:22:49.7118|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-01-24 10:22:49.7118|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-01-24 10:22:49.7118|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-01-24 10:22:49.7118|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-01-24 10:22:49.7118|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-01-24 10:22:49.7118|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-01-24 10:22:49.7118|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-01-24 10:22:49.7118|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-01-24 10:22:49.7118|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-01-24 10:22:49.7118|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-01-24 10:22:49.7118|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-01-24 10:22:49.7118|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-01-24 10:22:49.7118|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-01-24 10:22:49.7118|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending DATA frame for stream ID 5 with length 6144 and flags NONE. 
+2023-01-24 10:22:49.7435|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-01-24 10:22:49.7435|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-01-24 10:22:49.7435|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-01-24 10:22:49.7435|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-01-24 10:22:49.7435|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-01-24 10:22:49.7435|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-01-24 10:22:49.7435|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-01-24 10:22:49.7435|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-01-24 10:22:49.7435|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-01-24 10:22:49.7435|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-01-24 10:22:49.7435|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-01-24 10:22:49.7435|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-01-24 10:22:49.7435|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending DATA frame for stream ID 5 with length 8192 and flags NONE. 
+2023-01-24 10:22:49.7570|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-01-24 10:22:49.7570|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-01-24 10:22:49.7570|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-01-24 10:22:49.7570|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-01-24 10:22:49.7570|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-01-24 10:22:49.7570|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-01-24 10:22:49.7570|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-01-24 10:22:49.7570|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-01-24 10:22:49.7570|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-01-24 10:22:49.7570|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-01-24 10:22:49.7570|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-01-24 10:22:49.7570|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-01-24 10:22:49.7570|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending DATA frame for stream ID 5 with length 8192 and flags NONE. 
+2023-01-24 10:22:49.7570|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-01-24 10:22:49.7570|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-01-24 10:22:49.7570|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-01-24 10:22:49.7570|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-01-24 10:22:49.7570|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-01-24 10:22:49.7570|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-01-24 10:22:49.7570|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-01-24 10:22:49.7570|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-01-24 10:22:49.7570|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-01-24 10:22:49.7570|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-01-24 10:22:49.7570|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-01-24 10:22:49.7570|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-01-24 10:22:49.7570|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-01-24 10:22:49.7570|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-01-24 10:22:49.7570|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-01-24 10:22:49.7570|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-01-24 10:22:49.7570|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-01-24 10:22:49.7570|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-01-24 10:22:49.7570|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending DATA frame for stream ID 5 with length 4270 and flags NONE. 
+2023-01-24 10:22:49.7702|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending DATA frame for stream ID 5 with length 0 and flags END_STREAM. 
+2023-01-24 10:22:49.7702|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7102/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 334.3938ms 
+2023-01-24 10:22:49.9290|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" received HEADERS frame for stream ID 7 with length 66 and flags END_STREAM, END_HEADERS, PRIORITY. 
+2023-01-24 10:22:49.9290|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - - 
+2023-01-24 10:22:49.9290|2|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2023-01-24 10:22:49.9290|1000|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/v1/swagger.json' 
+2023-01-24 10:22:49.9290|2|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints 
+2023-01-24 10:22:52.0144|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending HEADERS frame for stream ID 7 with length 65 and flags END_HEADERS. 
+2023-01-24 10:22:52.0144|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending DATA frame for stream ID 7 with length 15953 and flags NONE. 
+2023-01-24 10:22:52.0144|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" sending DATA frame for stream ID 7 with length 0 and flags END_STREAM. 
+2023-01-24 10:22:52.0144|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 2085.6991ms 
+2023-01-24 10:22:52.0144|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" received WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0. 
+2023-01-24 10:23:35.7571|6|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMNTOR93P1HV" received FIN. 
+2023-01-24 10:23:35.7984|48|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1HV" is closed. The last processed stream ID was 7. 
+2023-01-24 10:23:35.8676|7|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMNTOR93P1HV" sending FIN because: "The client closed the connection." 
+2023-01-24 10:23:35.8676|2|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMNTOR93P1HV" stopped. 
+2023-01-24 10:24:06.1060|39|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMNTOR93P1I0" accepted. 
+2023-01-24 10:24:06.1143|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMNTOR93P1I0" started. 
+2023-01-24 10:24:06.1392|3|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HMNTOR93P1I0 established using the following protocol: Tls12 
+2023-01-24 10:24:06.1392|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1I0" sending SETTINGS frame for stream ID 0 with length 18 and flags NONE. 
+2023-01-24 10:24:06.1392|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1I0" sending WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0. 
+2023-01-24 10:24:06.1392|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1I0" received SETTINGS frame for stream ID 0 with length 30 and flags NONE. 
+2023-01-24 10:24:06.1392|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1I0" sending SETTINGS frame for stream ID 0 with length 0 and flags ACK. 
+2023-01-24 10:24:06.1392|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1I0" received WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0. 
+2023-01-24 10:24:06.1392|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1I0" received HEADERS frame for stream ID 1 with length 401 and flags END_HEADERS, PRIORITY. 
+2023-01-24 10:24:06.1707|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1I0" received DATA frame for stream ID 1 with length 62 and flags END_STREAM. 
+2023-01-24 10:24:06.1707|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7102/api/controller/api/Login application/json 62 
+2023-01-24 10:24:06.1707|2|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2023-01-24 10:24:06.1707|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1I0" received SETTINGS frame for stream ID 0 with length 0 and flags ACK. 
+2023-01-24 10:24:06.1814|1001|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/controller/api/Login' 
+2023-01-24 10:24:06.2034|1005|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'FundooNotesApp.Controllers.UserController.userLogin (FundooNotesApp)' with route pattern 'api/controller/api/Login' is valid for the request path '/api/controller/api/Login' 
+2023-01-24 10:24:06.2034|1|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'FundooNotesApp.Controllers.UserController.userLogin (FundooNotesApp)' 
+2023-01-24 10:24:06.2604|15|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint. 
+2023-01-24 10:24:06.2604|15|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint. 
+2023-01-24 10:24:06.2604|2|DEBUG|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|The request has an origin header: 'https://localhost:7102'. 
+2023-01-24 10:24:06.2604|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution successful. 
+2023-01-24 10:24:07.1812|9|DEBUG|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was not authenticated. 
+2023-01-24 10:24:07.1984|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundooNotesApp.Controllers.UserController.userLogin (FundooNotesApp)' 
+2023-01-24 10:24:07.3753|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "userLogin", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult userLogin(CommonLayer.Model.UserLogin) on controller FundooNotesApp.Controllers.UserController (FundooNotesApp). 
+2023-01-24 10:24:07.3753|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2023-01-24 10:24:07.3753|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2023-01-24 10:24:07.3753|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2023-01-24 10:24:07.3753|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2023-01-24 10:24:07.3753|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2023-01-24 10:24:07.3799|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller FundooNotesApp.Controllers.UserController (FundooNotesApp) 
+2023-01-24 10:24:08.8063|10401|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|An 'IServiceProvider' was created for internal use by Entity Framework. 
+2023-01-24 10:24:08.9871|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller FundooNotesApp.Controllers.UserController (FundooNotesApp) 
+2023-01-24 10:24:09.1106|22|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'ULogin' of type 'CommonLayer.Model.UserLogin' ... 
+2023-01-24 10:24:09.1152|44|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Attempting to bind parameter 'ULogin' of type 'CommonLayer.Model.UserLogin' using the name '' in request data ... 
+2023-01-24 10:24:09.1152|1|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'. 
+2023-01-24 10:24:09.1673|25|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMNTOR93P1I0", Request id "0HMNTOR93P1I0:00000001": started reading request body. 
+2023-01-24 10:24:09.1673|26|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMNTOR93P1I0", Request id "0HMNTOR93P1I0:00000001": done reading request body. 
+2023-01-24 10:24:09.1855|2|DEBUG|Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter|JSON input formatter succeeded, deserializing to type 'CommonLayer.Model.UserLogin' 
+2023-01-24 10:24:09.1855|45|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Done attempting to bind parameter 'ULogin' of type 'CommonLayer.Model.UserLogin'. 
+2023-01-24 10:24:09.1855|23|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'ULogin' of type 'CommonLayer.Model.UserLogin'. 
+2023-01-24 10:24:09.1855|26|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'ULogin' of type 'CommonLayer.Model.UserLogin' ... 
+2023-01-24 10:24:09.2473|27|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'ULogin' of type 'CommonLayer.Model.UserLogin'. 
+2023-01-24 10:24:09.2473|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-01-24 10:24:09.2473|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-01-24 10:24:09.2473|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2023-01-24 10:24:09.2473|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2023-01-24 10:24:09.2576|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method FundooNotesApp.Controllers.UserController.userLogin (FundooNotesApp) - Validation state: Valid 
+2023-01-24 10:24:09.2576|1|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method FundooNotesApp.Controllers.UserController.userLogin (FundooNotesApp) with arguments (CommonLayer.Model.UserLogin) 
+2023-01-24 10:24:11.9589|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 6.0.0 initialized 'FundooDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None 
+2023-01-24 10:24:12.6916|10111|DEBUG|Microsoft.EntityFrameworkCore.Query|Compiling query expression: 
+'DbSet<UserTable>()
+    .FirstOrDefault(ud => ud.EmailId == __uLogin_EmailId_0 && ud.Password == __EncryptPass_1)' 
+2023-01-24 10:24:13.3827|10107|DEBUG|Microsoft.EntityFrameworkCore.Query|Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<UserTable>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: UserTable.userId (long) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: UserTable.EmailId (string) Required, 1], [Property: UserTable.FirstName (string) Required, 2], [Property: UserTable.LastName (string) Required, 3], [Property: UserTable.Password (string) Required, 4] }
+        SELECT TOP(1) u.userId, u.EmailId, u.FirstName, u.LastName, u.Password
+        FROM UserTable AS u
+        WHERE (u.EmailId == @__uLogin_EmailId_0) && (u.Password == @__EncryptPass_1)), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, UserTable>, 
+    RepoLayer.Context.FundooDBContext, 
+    False, 
+    False, 
+    True
+)
+    .SingleOrDefault()' 
+2023-01-24 10:24:13.5090|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2023-01-24 10:24:13.7073|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (199ms). 
+2023-01-24 10:24:13.7648|20000|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'FundooNotesDB' on server '(localdb)\MSSQLLocalDB'. 
+2023-01-24 10:24:33.6511|20004|ERROR|Microsoft.EntityFrameworkCore.Database.Connection|An error occurred using the connection to database 'FundooNotesDB' on server '(localdb)\MSSQLLocalDB'. 
+2023-01-24 10:24:33.7967|10100|ERROR|Microsoft.EntityFrameworkCore.Query|An exception occurred while iterating over the results of a query for context type 'RepoLayer.Context.FundooDBContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=18187; handshake=244; 
+ ---> System.ComponentModel.Win32Exception (258): The wait operation timed out.
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   at Microsoft.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   at Microsoft.Data.SqlClient.TdsParser.ConsumePreLoginHandshake(Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity, Boolean& marsCapable, Boolean& fedAuthRequired)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity, Boolean withFailover, SqlAuthenticationMethod authType)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:10b657d7-e2d4-4714-9de3-2342104120f8
+Error Number:-2,State:0,Class:11 Microsoft.Data.SqlClient.SqlException (0x80131904): Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=18187; handshake=244; 
+ ---> System.ComponentModel.Win32Exception (258): The wait operation timed out.
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   at Microsoft.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   at Microsoft.Data.SqlClient.TdsParser.ConsumePreLoginHandshake(Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity, Boolean& marsCapable, Boolean& fedAuthRequired)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity, Boolean withFailover, SqlAuthenticationMethod authType)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:10b657d7-e2d4-4714-9de3-2342104120f8
+Error Number:-2,State:0,Class:11
+2023-01-24 10:24:35.5085|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method FundooNotesApp.Controllers.UserController.userLogin (FundooNotesApp), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 26195.3529ms. 
+2023-01-24 10:24:35.5085|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2023-01-24 10:24:35.5085|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2023-01-24 10:24:35.5085|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-01-24 10:24:35.5085|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-01-24 10:24:35.5085|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2023-01-24 10:24:35.5085|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2023-01-24 10:24:35.5560|4|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.BadRequestObjectResult. 
+2023-01-24 10:24:35.5560|11|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2023-01-24 10:24:35.5560|4|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation. 
+2023-01-24 10:24:35.5560|8|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2023-01-24 10:24:35.5560|10|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result. 
+2023-01-24 10:24:35.5560|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response. 
+2023-01-24 10:24:35.5560|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType6`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-01-24 10:24:35.6362|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1I0" sending HEADERS frame for stream ID 1 with length 77 and flags END_HEADERS. 
+2023-01-24 10:24:35.6362|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1I0" sending DATA frame for stream ID 1 with length 376 and flags NONE. 
+2023-01-24 10:24:35.6362|5|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.BadRequestObjectResult. 
+2023-01-24 10:24:35.6362|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2023-01-24 10:24:35.6362|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2023-01-24 10:24:35.6444|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1I0" received WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0. 
+2023-01-24 10:24:35.6444|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1I0" received WINDOW_UPDATE frame for stream ID 1 with length 4 and flags 0x0. 
+2023-01-24 10:24:35.6444|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundooNotesApp.Controllers.UserController.userLogin (FundooNotesApp) in 28259.9165ms 
+2023-01-24 10:24:35.6444|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundooNotesApp.Controllers.UserController.userLogin (FundooNotesApp)' 
+2023-01-24 10:24:35.6444|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1I0" sending DATA frame for stream ID 1 with length 0 and flags END_STREAM. 
+2023-01-24 10:24:35.6682|10407|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'FundooDBContext' disposed. 
+2023-01-24 10:24:35.7497|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7102/api/controller/api/Login application/json 62 - 400 - application/json;+charset=utf-8 29578.7649ms 
+2023-01-24 10:24:35.8891|6|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMNTOR93P1I0" received FIN. 
+2023-01-24 10:24:35.8891|48|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1I0" is closed. The last processed stream ID was 1. 
+2023-01-24 10:24:35.8891|7|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMNTOR93P1I0" sending FIN because: "The client closed the connection." 
+2023-01-24 10:24:35.8891|2|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMNTOR93P1I0" stopped. 
+2023-01-24 10:25:08.6258|39|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMNTOR93P1I1" accepted. 
+2023-01-24 10:25:08.6398|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMNTOR93P1I1" started. 
+2023-01-24 10:25:08.6608|3|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HMNTOR93P1I1 established using the following protocol: Tls12 
+2023-01-24 10:25:08.6608|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1I1" sending SETTINGS frame for stream ID 0 with length 18 and flags NONE. 
+2023-01-24 10:25:08.6608|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1I1" sending WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0. 
+2023-01-24 10:25:08.6608|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1I1" received SETTINGS frame for stream ID 0 with length 30 and flags NONE. 
+2023-01-24 10:25:08.6608|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1I1" sending SETTINGS frame for stream ID 0 with length 0 and flags ACK. 
+2023-01-24 10:25:08.6608|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1I1" received WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0. 
+2023-01-24 10:25:08.6608|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1I1" received HEADERS frame for stream ID 1 with length 401 and flags END_HEADERS, PRIORITY. 
+2023-01-24 10:25:08.6608|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1I1" received DATA frame for stream ID 1 with length 62 and flags END_STREAM. 
+2023-01-24 10:25:08.6608|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7102/api/controller/api/Login application/json 62 
+2023-01-24 10:25:08.6608|2|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2023-01-24 10:25:08.6793|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1I1" received SETTINGS frame for stream ID 0 with length 0 and flags ACK. 
+2023-01-24 10:25:08.6793|1001|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/controller/api/Login' 
+2023-01-24 10:25:08.6793|1005|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'FundooNotesApp.Controllers.UserController.userLogin (FundooNotesApp)' with route pattern 'api/controller/api/Login' is valid for the request path '/api/controller/api/Login' 
+2023-01-24 10:25:08.6793|1|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'FundooNotesApp.Controllers.UserController.userLogin (FundooNotesApp)' 
+2023-01-24 10:25:08.6793|15|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint. 
+2023-01-24 10:25:08.6793|15|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint. 
+2023-01-24 10:25:08.6793|2|DEBUG|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|The request has an origin header: 'https://localhost:7102'. 
+2023-01-24 10:25:08.6793|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution successful. 
+2023-01-24 10:25:08.6793|9|DEBUG|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was not authenticated. 
+2023-01-24 10:25:08.6793|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundooNotesApp.Controllers.UserController.userLogin (FundooNotesApp)' 
+2023-01-24 10:25:08.6793|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "userLogin", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult userLogin(CommonLayer.Model.UserLogin) on controller FundooNotesApp.Controllers.UserController (FundooNotesApp). 
+2023-01-24 10:25:08.6793|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2023-01-24 10:25:08.6793|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2023-01-24 10:25:08.6793|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2023-01-24 10:25:08.6793|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2023-01-24 10:25:08.6793|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2023-01-24 10:25:08.6793|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller FundooNotesApp.Controllers.UserController (FundooNotesApp) 
+2023-01-24 10:25:08.7127|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller FundooNotesApp.Controllers.UserController (FundooNotesApp) 
+2023-01-24 10:25:08.7127|22|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'ULogin' of type 'CommonLayer.Model.UserLogin' ... 
+2023-01-24 10:25:08.7127|44|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Attempting to bind parameter 'ULogin' of type 'CommonLayer.Model.UserLogin' using the name '' in request data ... 
+2023-01-24 10:25:08.7127|1|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'. 
+2023-01-24 10:25:08.7127|25|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMNTOR93P1I1", Request id "0HMNTOR93P1I1:00000001": started reading request body. 
+2023-01-24 10:25:08.7127|26|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMNTOR93P1I1", Request id "0HMNTOR93P1I1:00000001": done reading request body. 
+2023-01-24 10:25:08.7127|2|DEBUG|Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter|JSON input formatter succeeded, deserializing to type 'CommonLayer.Model.UserLogin' 
+2023-01-24 10:25:08.7127|45|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Done attempting to bind parameter 'ULogin' of type 'CommonLayer.Model.UserLogin'. 
+2023-01-24 10:25:08.7127|23|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'ULogin' of type 'CommonLayer.Model.UserLogin'. 
+2023-01-24 10:25:08.7127|26|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'ULogin' of type 'CommonLayer.Model.UserLogin' ... 
+2023-01-24 10:25:08.7127|27|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'ULogin' of type 'CommonLayer.Model.UserLogin'. 
+2023-01-24 10:25:08.7127|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-01-24 10:25:08.7127|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-01-24 10:25:08.7127|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2023-01-24 10:25:08.7127|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2023-01-24 10:25:08.7127|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method FundooNotesApp.Controllers.UserController.userLogin (FundooNotesApp) - Validation state: Valid 
+2023-01-24 10:25:08.7127|1|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method FundooNotesApp.Controllers.UserController.userLogin (FundooNotesApp) with arguments (CommonLayer.Model.UserLogin) 
+2023-01-24 10:25:08.7127|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 6.0.0 initialized 'FundooDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None 
+2023-01-24 10:25:08.7236|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2023-01-24 10:25:08.7236|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). 
+2023-01-24 10:25:08.7236|20000|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'FundooNotesDB' on server '(localdb)\MSSQLLocalDB'. 
+2023-01-24 10:25:09.9453|20001|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'FundooNotesDB' on server '(localdb)\MSSQLLocalDB'. 
+2023-01-24 10:25:10.0042|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@__uLogin_EmailId_0='?' (Size = 4000), @__EncryptPass_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[userId], [u].[EmailId], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE ([u].[EmailId] = @__uLogin_EmailId_0) AND ([u].[Password] = @__EncryptPass_1) 
+2023-01-24 10:25:10.6880|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (716ms) [Parameters=[@__uLogin_EmailId_0='?' (Size = 4000), @__EncryptPass_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[userId], [u].[EmailId], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [UserTable] AS [u]
+WHERE ([u].[EmailId] = @__uLogin_EmailId_0) AND ([u].[Password] = @__EncryptPass_1) 
+2023-01-24 10:25:10.8618|10806|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'FundooDBContext' started tracking 'UserTable' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2023-01-24 10:25:10.9842|20300|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader was disposed. 
+2023-01-24 10:25:11.0287|20002|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'FundooNotesDB' on server '(localdb)\MSSQLLocalDB'. 
+2023-01-24 10:25:11.0849|20003|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'FundooNotesDB' on server '(localdb)\MSSQLLocalDB'. 
+2023-01-24 10:25:13.2466|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method FundooNotesApp.Controllers.UserController.userLogin (FundooNotesApp), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 4532.6307ms. 
+2023-01-24 10:25:13.2466|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2023-01-24 10:25:13.2466|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2023-01-24 10:25:13.2466|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-01-24 10:25:13.2466|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-01-24 10:25:13.2466|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2023-01-24 10:25:13.2466|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2023-01-24 10:25:13.2466|4|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult. 
+2023-01-24 10:25:13.2466|11|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2023-01-24 10:25:13.2466|4|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation. 
+2023-01-24 10:25:13.2466|8|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2023-01-24 10:25:13.2466|10|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result. 
+2023-01-24 10:25:13.2466|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response. 
+2023-01-24 10:25:13.2466|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type '<>f__AnonymousType5`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-01-24 10:25:13.2466|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1I1" sending HEADERS frame for stream ID 1 with length 77 and flags END_HEADERS. 
+2023-01-24 10:25:13.2466|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1I1" sending DATA frame for stream ID 1 with length 264 and flags NONE. 
+2023-01-24 10:25:13.2466|5|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult. 
+2023-01-24 10:25:13.2466|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2023-01-24 10:25:13.2466|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2023-01-24 10:25:13.2466|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundooNotesApp.Controllers.UserController.userLogin (FundooNotesApp) in 4563.2076ms 
+2023-01-24 10:25:13.2466|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundooNotesApp.Controllers.UserController.userLogin (FundooNotesApp)' 
+2023-01-24 10:25:13.2466|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1I1" sending DATA frame for stream ID 1 with length 0 and flags END_STREAM. 
+2023-01-24 10:25:13.2466|10407|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'FundooDBContext' disposed. 
+2023-01-24 10:25:13.2466|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7102/api/controller/api/Login application/json 62 - 200 - application/json;+charset=utf-8 4574.5406ms 
+2023-01-24 10:25:15.9883|6|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMNTOR93P1I1" received FIN. 
+2023-01-24 10:25:15.9883|48|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1I1" is closed. The last processed stream ID was 1. 
+2023-01-24 10:25:15.9883|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1I1" sending GOAWAY frame for stream ID 0 with length 8 and flags 0x0. 
+2023-01-24 10:25:15.9883|2|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMNTOR93P1I1" stopped. 
+2023-01-24 10:25:15.9883|7|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMNTOR93P1I1" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2023-01-24 11:04:10.5953|39|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMNTOR93P1I2" accepted. 
+2023-01-24 11:04:10.5953|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMNTOR93P1I2" started. 
+2023-01-24 11:04:10.6181|3|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HMNTOR93P1I2 established using the following protocol: Tls12 
+2023-01-24 11:04:10.6181|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1I2" sending SETTINGS frame for stream ID 0 with length 18 and flags NONE. 
+2023-01-24 11:04:10.6181|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1I2" sending WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0. 
+2023-01-24 11:04:10.6181|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1I2" received SETTINGS frame for stream ID 0 with length 30 and flags NONE. 
+2023-01-24 11:04:10.6181|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1I2" sending SETTINGS frame for stream ID 0 with length 0 and flags ACK. 
+2023-01-24 11:04:10.6181|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1I2" received WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0. 
+2023-01-24 11:04:10.6181|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1I2" received HEADERS frame for stream ID 1 with length 331 and flags END_STREAM, END_HEADERS, PRIORITY. 
+2023-01-24 11:04:10.6181|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1I2" received SETTINGS frame for stream ID 0 with length 0 and flags ACK. 
+2023-01-24 11:04:10.6181|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 OPTIONS https://localhost:7102/api/controller/api/Login - - 
+2023-01-24 11:04:10.6181|2|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2023-01-24 11:04:10.6181|1001|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/controller/api/Login' 
+2023-01-24 11:04:10.6181|1|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint '405 HTTP Method Not Supported' 
+2023-01-24 11:04:10.6181|15|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint. 
+2023-01-24 11:04:10.6181|15|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint. 
+2023-01-24 11:04:10.6574|2|DEBUG|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|The request has an origin header: 'http://localhost:3002'. 
+2023-01-24 11:04:10.6574|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution successful. 
+2023-01-24 11:04:10.6574|1|DEBUG|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|The request is a preflight request. 
+2023-01-24 11:04:10.6574|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1I2" sending HEADERS frame for stream ID 1 with length 122 and flags END_STREAM, END_HEADERS. 
+2023-01-24 11:04:10.6574|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 OPTIONS https://localhost:7102/api/controller/api/Login - - - 204 - - 38.4381ms 
+2023-01-24 11:04:10.6642|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1I2" received HEADERS frame for stream ID 3 with length 186 and flags END_HEADERS, PRIORITY. 
+2023-01-24 11:04:10.6642|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1I2" received DATA frame for stream ID 3 with length 51 and flags END_STREAM. 
+2023-01-24 11:04:10.6642|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7102/api/controller/api/Login application/json 51 
+2023-01-24 11:04:10.6642|2|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2023-01-24 11:04:10.6642|1001|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/controller/api/Login' 
+2023-01-24 11:04:10.6642|1005|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'FundooNotesApp.Controllers.UserController.userLogin (FundooNotesApp)' with route pattern 'api/controller/api/Login' is valid for the request path '/api/controller/api/Login' 
+2023-01-24 11:04:10.6642|1|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'FundooNotesApp.Controllers.UserController.userLogin (FundooNotesApp)' 
+2023-01-24 11:04:10.6642|15|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint. 
+2023-01-24 11:04:10.6642|15|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint. 
+2023-01-24 11:04:10.6642|2|DEBUG|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|The request has an origin header: 'http://localhost:3002'. 
+2023-01-24 11:04:10.6642|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution successful. 
+2023-01-24 11:04:10.6642|9|DEBUG|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was not authenticated. 
+2023-01-24 11:04:10.6642|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundooNotesApp.Controllers.UserController.userLogin (FundooNotesApp)' 
+2023-01-24 11:04:10.6642|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "userLogin", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult userLogin(CommonLayer.Model.UserLogin) on controller FundooNotesApp.Controllers.UserController (FundooNotesApp). 
+2023-01-24 11:04:10.6642|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2023-01-24 11:04:10.6642|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2023-01-24 11:04:10.6642|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2023-01-24 11:04:10.6642|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2023-01-24 11:04:10.6642|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2023-01-24 11:04:10.6642|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller FundooNotesApp.Controllers.UserController (FundooNotesApp) 
+2023-01-24 11:04:10.6642|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller FundooNotesApp.Controllers.UserController (FundooNotesApp) 
+2023-01-24 11:04:10.6642|22|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'ULogin' of type 'CommonLayer.Model.UserLogin' ... 
+2023-01-24 11:04:10.6642|44|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Attempting to bind parameter 'ULogin' of type 'CommonLayer.Model.UserLogin' using the name '' in request data ... 
+2023-01-24 11:04:10.6642|1|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'. 
+2023-01-24 11:04:10.6642|25|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMNTOR93P1I2", Request id "0HMNTOR93P1I2:00000003": started reading request body. 
+2023-01-24 11:04:10.6642|26|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMNTOR93P1I2", Request id "0HMNTOR93P1I2:00000003": done reading request body. 
+2023-01-24 11:04:10.6642|2|DEBUG|Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter|JSON input formatter succeeded, deserializing to type 'CommonLayer.Model.UserLogin' 
+2023-01-24 11:04:10.6642|45|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Done attempting to bind parameter 'ULogin' of type 'CommonLayer.Model.UserLogin'. 
+2023-01-24 11:04:10.6642|23|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'ULogin' of type 'CommonLayer.Model.UserLogin'. 
+2023-01-24 11:04:10.6642|26|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'ULogin' of type 'CommonLayer.Model.UserLogin' ... 
+2023-01-24 11:04:10.7553|27|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'ULogin' of type 'CommonLayer.Model.UserLogin'. 
+2023-01-24 11:04:10.7553|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-01-24 11:04:10.7553|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-01-24 11:04:10.7553|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2023-01-24 11:04:10.7553|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter|The request has model state errors, returning an error response. 
+2023-01-24 11:04:10.8689|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2023-01-24 11:04:10.8689|3|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter'. 
+2023-01-24 11:04:10.8689|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-01-24 11:04:10.8689|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-01-24 11:04:10.8689|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2023-01-24 11:04:10.8689|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2023-01-24 11:04:10.8689|4|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.BadRequestObjectResult. 
+2023-01-24 11:04:10.8689|11|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2023-01-24 11:04:10.8689|4|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation. 
+2023-01-24 11:04:10.8689|9|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types 'application/problem+json, application/problem+xml, application/problem+json, application/problem+xml'. 
+2023-01-24 11:04:10.8689|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/problem+json' to write the response. 
+2023-01-24 11:04:10.8689|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'. 
+2023-01-24 11:04:10.9182|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1I2" sending HEADERS frame for stream ID 3 with length 75 and flags END_HEADERS. 
+2023-01-24 11:04:10.9182|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1I2" sending DATA frame for stream ID 3 with length 247 and flags NONE. 
+2023-01-24 11:04:10.9182|5|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.BadRequestObjectResult. 
+2023-01-24 11:04:10.9182|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2023-01-24 11:04:10.9182|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2023-01-24 11:04:10.9182|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundooNotesApp.Controllers.UserController.userLogin (FundooNotesApp) in 249.8838ms 
+2023-01-24 11:04:10.9182|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundooNotesApp.Controllers.UserController.userLogin (FundooNotesApp)' 
+2023-01-24 11:04:10.9182|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1I2" sending DATA frame for stream ID 3 with length 0 and flags END_STREAM. 
+2023-01-24 11:04:10.9182|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7102/api/controller/api/Login application/json 51 - 400 - application/problem+json;+charset=utf-8 255.5718ms 
+2023-01-24 11:04:16.6477|6|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMNTOR93P1I2" received FIN. 
+2023-01-24 11:04:16.6619|48|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1I2" is closed. The last processed stream ID was 3. 
+2023-01-24 11:04:16.6619|7|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMNTOR93P1I2" sending FIN because: "The client closed the connection." 
+2023-01-24 11:04:16.7005|2|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMNTOR93P1I2" stopped. 
+2023-01-24 11:05:24.0867|39|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMNTOR93P1I3" accepted. 
+2023-01-24 11:05:24.0867|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMNTOR93P1I3" started. 
+2023-01-24 11:05:24.1255|3|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HMNTOR93P1I3 established using the following protocol: Tls12 
+2023-01-24 11:05:24.1255|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1I3" sending SETTINGS frame for stream ID 0 with length 18 and flags NONE. 
+2023-01-24 11:05:24.1255|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1I3" sending WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0. 
+2023-01-24 11:05:24.1255|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1I3" received SETTINGS frame for stream ID 0 with length 30 and flags NONE. 
+2023-01-24 11:05:24.1255|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1I3" sending SETTINGS frame for stream ID 0 with length 0 and flags ACK. 
+2023-01-24 11:05:24.1255|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1I3" received WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0. 
+2023-01-24 11:05:24.1255|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1I3" received HEADERS frame for stream ID 1 with length 331 and flags END_STREAM, END_HEADERS, PRIORITY. 
+2023-01-24 11:05:24.1255|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1I3" received SETTINGS frame for stream ID 0 with length 0 and flags ACK. 
+2023-01-24 11:05:24.1255|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 OPTIONS https://localhost:7102/api/controller/api/Login - - 
+2023-01-24 11:05:24.1255|2|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2023-01-24 11:05:24.1255|1001|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/controller/api/Login' 
+2023-01-24 11:05:24.1255|1|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint '405 HTTP Method Not Supported' 
+2023-01-24 11:05:24.1255|15|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint. 
+2023-01-24 11:05:24.1255|15|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint. 
+2023-01-24 11:05:24.1255|2|DEBUG|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|The request has an origin header: 'http://localhost:3002'. 
+2023-01-24 11:05:24.1255|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution successful. 
+2023-01-24 11:05:24.1255|1|DEBUG|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|The request is a preflight request. 
+2023-01-24 11:05:24.1255|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1I3" sending HEADERS frame for stream ID 1 with length 122 and flags END_STREAM, END_HEADERS. 
+2023-01-24 11:05:24.1255|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 OPTIONS https://localhost:7102/api/controller/api/Login - - - 204 - - 0.8972ms 
+2023-01-24 11:05:24.1330|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1I3" received HEADERS frame for stream ID 3 with length 186 and flags END_HEADERS, PRIORITY. 
+2023-01-24 11:05:24.1330|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1I3" received DATA frame for stream ID 3 with length 51 and flags END_STREAM. 
+2023-01-24 11:05:24.1330|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7102/api/controller/api/Login application/json 51 
+2023-01-24 11:05:24.1330|2|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2023-01-24 11:05:24.1330|1001|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/controller/api/Login' 
+2023-01-24 11:05:24.1330|1005|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'FundooNotesApp.Controllers.UserController.userLogin (FundooNotesApp)' with route pattern 'api/controller/api/Login' is valid for the request path '/api/controller/api/Login' 
+2023-01-24 11:05:24.1330|1|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'FundooNotesApp.Controllers.UserController.userLogin (FundooNotesApp)' 
+2023-01-24 11:05:24.1330|15|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint. 
+2023-01-24 11:05:24.1330|15|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint. 
+2023-01-24 11:05:24.1330|2|DEBUG|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|The request has an origin header: 'http://localhost:3002'. 
+2023-01-24 11:05:24.1330|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution successful. 
+2023-01-24 11:05:24.1330|9|DEBUG|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was not authenticated. 
+2023-01-24 11:05:24.1330|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundooNotesApp.Controllers.UserController.userLogin (FundooNotesApp)' 
+2023-01-24 11:05:24.1330|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "userLogin", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult userLogin(CommonLayer.Model.UserLogin) on controller FundooNotesApp.Controllers.UserController (FundooNotesApp). 
+2023-01-24 11:05:24.1330|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2023-01-24 11:05:24.1330|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2023-01-24 11:05:24.1330|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2023-01-24 11:05:24.1330|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2023-01-24 11:05:24.1330|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2023-01-24 11:05:24.1330|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller FundooNotesApp.Controllers.UserController (FundooNotesApp) 
+2023-01-24 11:05:24.1330|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller FundooNotesApp.Controllers.UserController (FundooNotesApp) 
+2023-01-24 11:05:24.1330|22|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'ULogin' of type 'CommonLayer.Model.UserLogin' ... 
+2023-01-24 11:05:24.1330|44|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Attempting to bind parameter 'ULogin' of type 'CommonLayer.Model.UserLogin' using the name '' in request data ... 
+2023-01-24 11:05:24.1330|1|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'. 
+2023-01-24 11:05:24.1330|25|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMNTOR93P1I3", Request id "0HMNTOR93P1I3:00000003": started reading request body. 
+2023-01-24 11:05:24.1330|26|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMNTOR93P1I3", Request id "0HMNTOR93P1I3:00000003": done reading request body. 
+2023-01-24 11:05:24.1330|2|DEBUG|Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter|JSON input formatter succeeded, deserializing to type 'CommonLayer.Model.UserLogin' 
+2023-01-24 11:05:24.1330|45|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Done attempting to bind parameter 'ULogin' of type 'CommonLayer.Model.UserLogin'. 
+2023-01-24 11:05:24.1330|23|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'ULogin' of type 'CommonLayer.Model.UserLogin'. 
+2023-01-24 11:05:24.1330|26|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'ULogin' of type 'CommonLayer.Model.UserLogin' ... 
+2023-01-24 11:05:24.1330|27|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'ULogin' of type 'CommonLayer.Model.UserLogin'. 
+2023-01-24 11:05:24.1330|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-01-24 11:05:24.1330|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-01-24 11:05:24.1330|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2023-01-24 11:05:24.1330|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter|The request has model state errors, returning an error response. 
+2023-01-24 11:05:24.1330|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2023-01-24 11:05:24.1330|3|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter'. 
+2023-01-24 11:05:24.1330|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-01-24 11:05:24.1330|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-01-24 11:05:24.1330|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2023-01-24 11:05:24.1330|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2023-01-24 11:05:24.1330|4|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.BadRequestObjectResult. 
+2023-01-24 11:05:24.1330|11|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2023-01-24 11:05:24.1330|4|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation. 
+2023-01-24 11:05:24.1330|9|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types 'application/problem+json, application/problem+xml, application/problem+json, application/problem+xml'. 
+2023-01-24 11:05:24.1330|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/problem+json' to write the response. 
+2023-01-24 11:05:24.1330|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'. 
+2023-01-24 11:05:24.1330|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1I3" sending HEADERS frame for stream ID 3 with length 45 and flags END_HEADERS. 
+2023-01-24 11:05:24.1330|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1I3" sending DATA frame for stream ID 3 with length 247 and flags NONE. 
+2023-01-24 11:05:24.1330|5|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.BadRequestObjectResult. 
+2023-01-24 11:05:24.1330|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2023-01-24 11:05:24.1330|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2023-01-24 11:05:24.1330|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundooNotesApp.Controllers.UserController.userLogin (FundooNotesApp) in 1.1227ms 
+2023-01-24 11:05:24.1330|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundooNotesApp.Controllers.UserController.userLogin (FundooNotesApp)' 
+2023-01-24 11:05:24.1330|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1I3" sending DATA frame for stream ID 3 with length 0 and flags END_STREAM. 
+2023-01-24 11:05:24.1330|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7102/api/controller/api/Login application/json 51 - 400 - application/problem+json;+charset=utf-8 2.0772ms 
+2023-01-24 11:05:25.8992|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1I3" received HEADERS frame for stream ID 5 with length 42 and flags END_HEADERS, PRIORITY. 
+2023-01-24 11:05:25.8992|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1I3" received DATA frame for stream ID 5 with length 51 and flags END_STREAM. 
+2023-01-24 11:05:25.8992|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7102/api/controller/api/Login application/json 51 
+2023-01-24 11:05:25.8992|2|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2023-01-24 11:05:25.8992|1001|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/controller/api/Login' 
+2023-01-24 11:05:25.8992|1005|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'FundooNotesApp.Controllers.UserController.userLogin (FundooNotesApp)' with route pattern 'api/controller/api/Login' is valid for the request path '/api/controller/api/Login' 
+2023-01-24 11:05:25.8992|1|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'FundooNotesApp.Controllers.UserController.userLogin (FundooNotesApp)' 
+2023-01-24 11:05:25.8992|15|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint. 
+2023-01-24 11:05:25.8992|15|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint. 
+2023-01-24 11:05:25.8992|2|DEBUG|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|The request has an origin header: 'http://localhost:3002'. 
+2023-01-24 11:05:25.8992|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution successful. 
+2023-01-24 11:05:25.8992|9|DEBUG|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was not authenticated. 
+2023-01-24 11:05:25.8992|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundooNotesApp.Controllers.UserController.userLogin (FundooNotesApp)' 
+2023-01-24 11:05:25.8992|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "userLogin", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult userLogin(CommonLayer.Model.UserLogin) on controller FundooNotesApp.Controllers.UserController (FundooNotesApp). 
+2023-01-24 11:05:25.8992|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2023-01-24 11:05:25.8992|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2023-01-24 11:05:25.8992|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2023-01-24 11:05:25.8992|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2023-01-24 11:05:25.8992|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2023-01-24 11:05:25.8992|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller FundooNotesApp.Controllers.UserController (FundooNotesApp) 
+2023-01-24 11:05:25.8992|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller FundooNotesApp.Controllers.UserController (FundooNotesApp) 
+2023-01-24 11:05:25.8992|22|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'ULogin' of type 'CommonLayer.Model.UserLogin' ... 
+2023-01-24 11:05:25.8992|44|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Attempting to bind parameter 'ULogin' of type 'CommonLayer.Model.UserLogin' using the name '' in request data ... 
+2023-01-24 11:05:25.8992|1|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'. 
+2023-01-24 11:05:25.8992|25|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMNTOR93P1I3", Request id "0HMNTOR93P1I3:00000005": started reading request body. 
+2023-01-24 11:05:25.8992|26|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMNTOR93P1I3", Request id "0HMNTOR93P1I3:00000005": done reading request body. 
+2023-01-24 11:05:25.8992|2|DEBUG|Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter|JSON input formatter succeeded, deserializing to type 'CommonLayer.Model.UserLogin' 
+2023-01-24 11:05:25.8992|45|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Done attempting to bind parameter 'ULogin' of type 'CommonLayer.Model.UserLogin'. 
+2023-01-24 11:05:25.8992|23|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'ULogin' of type 'CommonLayer.Model.UserLogin'. 
+2023-01-24 11:05:25.8992|26|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'ULogin' of type 'CommonLayer.Model.UserLogin' ... 
+2023-01-24 11:05:25.8992|27|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'ULogin' of type 'CommonLayer.Model.UserLogin'. 
+2023-01-24 11:05:25.8992|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-01-24 11:05:25.8992|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-01-24 11:05:25.8992|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2023-01-24 11:05:25.8992|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter|The request has model state errors, returning an error response. 
+2023-01-24 11:05:25.8992|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2023-01-24 11:05:25.8992|3|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter'. 
+2023-01-24 11:05:25.8992|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-01-24 11:05:25.8992|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-01-24 11:05:25.8992|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2023-01-24 11:05:25.8992|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2023-01-24 11:05:25.8992|4|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.BadRequestObjectResult. 
+2023-01-24 11:05:25.8992|11|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2023-01-24 11:05:25.8992|4|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation. 
+2023-01-24 11:05:25.8992|9|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types 'application/problem+json, application/problem+xml, application/problem+json, application/problem+xml'. 
+2023-01-24 11:05:25.8992|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/problem+json' to write the response. 
+2023-01-24 11:05:25.8992|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'. 
+2023-01-24 11:05:25.8992|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1I3" sending HEADERS frame for stream ID 5 with length 35 and flags END_HEADERS. 
+2023-01-24 11:05:25.8992|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1I3" sending DATA frame for stream ID 5 with length 247 and flags NONE. 
+2023-01-24 11:05:25.8992|5|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.BadRequestObjectResult. 
+2023-01-24 11:05:25.8992|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2023-01-24 11:05:25.8992|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2023-01-24 11:05:25.8992|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundooNotesApp.Controllers.UserController.userLogin (FundooNotesApp) in 1.5273ms 
+2023-01-24 11:05:25.8992|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundooNotesApp.Controllers.UserController.userLogin (FundooNotesApp)' 
+2023-01-24 11:05:25.8992|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1I3" sending DATA frame for stream ID 5 with length 0 and flags END_STREAM. 
+2023-01-24 11:05:25.8992|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7102/api/controller/api/Login application/json 51 - 400 - application/problem+json;+charset=utf-8 2.4729ms 
+2023-01-24 11:05:26.5269|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1I3" received HEADERS frame for stream ID 7 with length 42 and flags END_HEADERS, PRIORITY. 
+2023-01-24 11:05:26.5269|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1I3" received DATA frame for stream ID 7 with length 51 and flags END_STREAM. 
+2023-01-24 11:05:26.5269|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7102/api/controller/api/Login application/json 51 
+2023-01-24 11:05:26.5269|2|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2023-01-24 11:05:26.5269|1001|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/controller/api/Login' 
+2023-01-24 11:05:26.5269|1005|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'FundooNotesApp.Controllers.UserController.userLogin (FundooNotesApp)' with route pattern 'api/controller/api/Login' is valid for the request path '/api/controller/api/Login' 
+2023-01-24 11:05:26.5269|1|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'FundooNotesApp.Controllers.UserController.userLogin (FundooNotesApp)' 
+2023-01-24 11:05:26.5269|15|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint. 
+2023-01-24 11:05:26.5269|15|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint. 
+2023-01-24 11:05:26.5269|2|DEBUG|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|The request has an origin header: 'http://localhost:3002'. 
+2023-01-24 11:05:26.5269|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution successful. 
+2023-01-24 11:05:26.5269|9|DEBUG|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was not authenticated. 
+2023-01-24 11:05:26.5269|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundooNotesApp.Controllers.UserController.userLogin (FundooNotesApp)' 
+2023-01-24 11:05:26.5269|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "userLogin", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult userLogin(CommonLayer.Model.UserLogin) on controller FundooNotesApp.Controllers.UserController (FundooNotesApp). 
+2023-01-24 11:05:26.5269|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2023-01-24 11:05:26.5269|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2023-01-24 11:05:26.5269|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2023-01-24 11:05:26.5269|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2023-01-24 11:05:26.5269|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2023-01-24 11:05:26.5269|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller FundooNotesApp.Controllers.UserController (FundooNotesApp) 
+2023-01-24 11:05:26.5269|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller FundooNotesApp.Controllers.UserController (FundooNotesApp) 
+2023-01-24 11:05:26.5269|22|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'ULogin' of type 'CommonLayer.Model.UserLogin' ... 
+2023-01-24 11:05:26.5269|44|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Attempting to bind parameter 'ULogin' of type 'CommonLayer.Model.UserLogin' using the name '' in request data ... 
+2023-01-24 11:05:26.5269|1|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'. 
+2023-01-24 11:05:26.5269|25|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMNTOR93P1I3", Request id "0HMNTOR93P1I3:00000007": started reading request body. 
+2023-01-24 11:05:26.5269|26|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMNTOR93P1I3", Request id "0HMNTOR93P1I3:00000007": done reading request body. 
+2023-01-24 11:05:26.5269|2|DEBUG|Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter|JSON input formatter succeeded, deserializing to type 'CommonLayer.Model.UserLogin' 
+2023-01-24 11:05:26.5269|45|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Done attempting to bind parameter 'ULogin' of type 'CommonLayer.Model.UserLogin'. 
+2023-01-24 11:05:26.5269|23|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'ULogin' of type 'CommonLayer.Model.UserLogin'. 
+2023-01-24 11:05:26.5269|26|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'ULogin' of type 'CommonLayer.Model.UserLogin' ... 
+2023-01-24 11:05:26.5269|27|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'ULogin' of type 'CommonLayer.Model.UserLogin'. 
+2023-01-24 11:05:26.5269|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-01-24 11:05:26.5269|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-01-24 11:05:26.5269|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2023-01-24 11:05:26.5269|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter|The request has model state errors, returning an error response. 
+2023-01-24 11:05:26.5269|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2023-01-24 11:05:26.5269|3|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter'. 
+2023-01-24 11:05:26.5269|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-01-24 11:05:26.5269|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-01-24 11:05:26.5269|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2023-01-24 11:05:26.5269|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2023-01-24 11:05:26.5353|4|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.BadRequestObjectResult. 
+2023-01-24 11:05:26.5353|11|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2023-01-24 11:05:26.5353|4|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation. 
+2023-01-24 11:05:26.5353|9|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types 'application/problem+json, application/problem+xml, application/problem+json, application/problem+xml'. 
+2023-01-24 11:05:26.5353|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/problem+json' to write the response. 
+2023-01-24 11:05:26.5353|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'. 
+2023-01-24 11:05:26.5353|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1I3" sending HEADERS frame for stream ID 7 with length 5 and flags END_HEADERS. 
+2023-01-24 11:05:26.5353|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1I3" sending DATA frame for stream ID 7 with length 247 and flags NONE. 
+2023-01-24 11:05:26.5353|5|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.BadRequestObjectResult. 
+2023-01-24 11:05:26.5353|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2023-01-24 11:05:26.5353|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2023-01-24 11:05:26.5353|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundooNotesApp.Controllers.UserController.userLogin (FundooNotesApp) in 11.9759ms 
+2023-01-24 11:05:26.5353|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundooNotesApp.Controllers.UserController.userLogin (FundooNotesApp)' 
+2023-01-24 11:05:26.5353|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1I3" sending DATA frame for stream ID 7 with length 0 and flags END_STREAM. 
+2023-01-24 11:05:26.5353|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7102/api/controller/api/Login application/json 51 - 400 - application/problem+json;+charset=utf-8 17.7554ms 
+2023-01-24 11:05:26.5888|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1I3" received HEADERS frame for stream ID 9 with length 42 and flags END_HEADERS, PRIORITY. 
+2023-01-24 11:05:26.5888|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1I3" received DATA frame for stream ID 9 with length 51 and flags END_STREAM. 
+2023-01-24 11:05:26.5888|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7102/api/controller/api/Login application/json 51 
+2023-01-24 11:05:26.5888|2|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2023-01-24 11:05:26.5888|1001|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/controller/api/Login' 
+2023-01-24 11:05:26.5888|1005|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'FundooNotesApp.Controllers.UserController.userLogin (FundooNotesApp)' with route pattern 'api/controller/api/Login' is valid for the request path '/api/controller/api/Login' 
+2023-01-24 11:05:26.5888|1|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'FundooNotesApp.Controllers.UserController.userLogin (FundooNotesApp)' 
+2023-01-24 11:05:26.5888|15|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint. 
+2023-01-24 11:05:26.5888|15|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint. 
+2023-01-24 11:05:26.5888|2|DEBUG|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|The request has an origin header: 'http://localhost:3002'. 
+2023-01-24 11:05:26.5888|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution successful. 
+2023-01-24 11:05:26.5888|9|DEBUG|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was not authenticated. 
+2023-01-24 11:05:26.5888|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundooNotesApp.Controllers.UserController.userLogin (FundooNotesApp)' 
+2023-01-24 11:05:26.5888|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "userLogin", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult userLogin(CommonLayer.Model.UserLogin) on controller FundooNotesApp.Controllers.UserController (FundooNotesApp). 
+2023-01-24 11:05:26.5888|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2023-01-24 11:05:26.5888|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2023-01-24 11:05:26.5888|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2023-01-24 11:05:26.5888|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2023-01-24 11:05:26.5888|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2023-01-24 11:05:26.5888|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller FundooNotesApp.Controllers.UserController (FundooNotesApp) 
+2023-01-24 11:05:26.5888|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller FundooNotesApp.Controllers.UserController (FundooNotesApp) 
+2023-01-24 11:05:26.5888|22|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'ULogin' of type 'CommonLayer.Model.UserLogin' ... 
+2023-01-24 11:05:26.5888|44|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Attempting to bind parameter 'ULogin' of type 'CommonLayer.Model.UserLogin' using the name '' in request data ... 
+2023-01-24 11:05:26.5888|1|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'. 
+2023-01-24 11:05:26.5888|25|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMNTOR93P1I3", Request id "0HMNTOR93P1I3:00000009": started reading request body. 
+2023-01-24 11:05:26.5888|26|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMNTOR93P1I3", Request id "0HMNTOR93P1I3:00000009": done reading request body. 
+2023-01-24 11:05:26.5888|2|DEBUG|Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter|JSON input formatter succeeded, deserializing to type 'CommonLayer.Model.UserLogin' 
+2023-01-24 11:05:26.5888|45|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Done attempting to bind parameter 'ULogin' of type 'CommonLayer.Model.UserLogin'. 
+2023-01-24 11:05:26.5888|23|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'ULogin' of type 'CommonLayer.Model.UserLogin'. 
+2023-01-24 11:05:26.5888|26|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'ULogin' of type 'CommonLayer.Model.UserLogin' ... 
+2023-01-24 11:05:26.5888|27|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'ULogin' of type 'CommonLayer.Model.UserLogin'. 
+2023-01-24 11:05:26.5888|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-01-24 11:05:26.5888|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-01-24 11:05:26.5888|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2023-01-24 11:05:26.5888|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter|The request has model state errors, returning an error response. 
+2023-01-24 11:05:26.5888|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2023-01-24 11:05:26.5888|3|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter'. 
+2023-01-24 11:05:26.5888|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-01-24 11:05:26.5888|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-01-24 11:05:26.5888|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2023-01-24 11:05:26.5888|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2023-01-24 11:05:26.5888|4|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.BadRequestObjectResult. 
+2023-01-24 11:05:26.5888|11|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2023-01-24 11:05:26.5888|4|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation. 
+2023-01-24 11:05:26.5888|9|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types 'application/problem+json, application/problem+xml, application/problem+json, application/problem+xml'. 
+2023-01-24 11:05:26.5888|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/problem+json' to write the response. 
+2023-01-24 11:05:26.5888|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'. 
+2023-01-24 11:05:26.5888|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1I3" sending HEADERS frame for stream ID 9 with length 5 and flags END_HEADERS. 
+2023-01-24 11:05:26.5888|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1I3" sending DATA frame for stream ID 9 with length 247 and flags NONE. 
+2023-01-24 11:05:26.5888|5|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.BadRequestObjectResult. 
+2023-01-24 11:05:26.5888|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2023-01-24 11:05:26.5888|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2023-01-24 11:05:26.5888|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundooNotesApp.Controllers.UserController.userLogin (FundooNotesApp) in 1.7094ms 
+2023-01-24 11:05:26.5888|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundooNotesApp.Controllers.UserController.userLogin (FundooNotesApp)' 
+2023-01-24 11:05:26.5888|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1I3" sending DATA frame for stream ID 9 with length 0 and flags END_STREAM. 
+2023-01-24 11:05:26.5888|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7102/api/controller/api/Login application/json 51 - 400 - application/problem+json;+charset=utf-8 2.6617ms 
+2023-01-24 11:05:26.8278|6|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMNTOR93P1I3" received FIN. 
+2023-01-24 11:05:26.8278|48|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1I3" is closed. The last processed stream ID was 9. 
+2023-01-24 11:05:26.8278|7|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMNTOR93P1I3" sending FIN because: "The client closed the connection." 
+2023-01-24 11:05:26.8278|2|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMNTOR93P1I3" stopped. 
+2023-01-24 11:05:26.8509|39|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMNTOR93P1I4" accepted. 
+2023-01-24 11:05:26.8509|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMNTOR93P1I4" started. 
+2023-01-24 11:05:26.8509|3|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HMNTOR93P1I4 established using the following protocol: Tls12 
+2023-01-24 11:05:26.8734|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1I4" sending SETTINGS frame for stream ID 0 with length 18 and flags NONE. 
+2023-01-24 11:05:26.8734|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1I4" sending WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0. 
+2023-01-24 11:05:26.8734|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1I4" received SETTINGS frame for stream ID 0 with length 30 and flags NONE. 
+2023-01-24 11:05:26.8734|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1I4" sending SETTINGS frame for stream ID 0 with length 0 and flags ACK. 
+2023-01-24 11:05:26.8734|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1I4" received WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0. 
+2023-01-24 11:05:26.8734|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1I4" received HEADERS frame for stream ID 1 with length 408 and flags END_HEADERS, PRIORITY. 
+2023-01-24 11:05:26.8734|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1I4" received DATA frame for stream ID 1 with length 51 and flags END_STREAM. 
+2023-01-24 11:05:26.8734|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7102/api/controller/api/Login application/json 51 
+2023-01-24 11:05:26.8734|2|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2023-01-24 11:05:26.8734|1001|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/controller/api/Login' 
+2023-01-24 11:05:26.8734|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1I4" received SETTINGS frame for stream ID 0 with length 0 and flags ACK. 
+2023-01-24 11:05:26.8734|1005|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'FundooNotesApp.Controllers.UserController.userLogin (FundooNotesApp)' with route pattern 'api/controller/api/Login' is valid for the request path '/api/controller/api/Login' 
+2023-01-24 11:05:26.8734|1|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'FundooNotesApp.Controllers.UserController.userLogin (FundooNotesApp)' 
+2023-01-24 11:05:26.8734|15|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint. 
+2023-01-24 11:05:26.8734|15|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint. 
+2023-01-24 11:05:26.8734|2|DEBUG|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|The request has an origin header: 'http://localhost:3002'. 
+2023-01-24 11:05:26.8734|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution successful. 
+2023-01-24 11:05:26.8734|9|DEBUG|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was not authenticated. 
+2023-01-24 11:05:26.8734|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundooNotesApp.Controllers.UserController.userLogin (FundooNotesApp)' 
+2023-01-24 11:05:26.8734|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "userLogin", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult userLogin(CommonLayer.Model.UserLogin) on controller FundooNotesApp.Controllers.UserController (FundooNotesApp). 
+2023-01-24 11:05:26.8734|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2023-01-24 11:05:26.8734|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2023-01-24 11:05:26.8734|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2023-01-24 11:05:26.8734|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2023-01-24 11:05:26.8734|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2023-01-24 11:05:26.8734|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller FundooNotesApp.Controllers.UserController (FundooNotesApp) 
+2023-01-24 11:05:26.8734|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller FundooNotesApp.Controllers.UserController (FundooNotesApp) 
+2023-01-24 11:05:26.8734|22|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'ULogin' of type 'CommonLayer.Model.UserLogin' ... 
+2023-01-24 11:05:26.8734|44|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Attempting to bind parameter 'ULogin' of type 'CommonLayer.Model.UserLogin' using the name '' in request data ... 
+2023-01-24 11:05:26.8734|1|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'. 
+2023-01-24 11:05:26.8734|25|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMNTOR93P1I4", Request id "0HMNTOR93P1I4:00000001": started reading request body. 
+2023-01-24 11:05:26.8734|26|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMNTOR93P1I4", Request id "0HMNTOR93P1I4:00000001": done reading request body. 
+2023-01-24 11:05:26.8734|2|DEBUG|Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter|JSON input formatter succeeded, deserializing to type 'CommonLayer.Model.UserLogin' 
+2023-01-24 11:05:26.8734|45|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Done attempting to bind parameter 'ULogin' of type 'CommonLayer.Model.UserLogin'. 
+2023-01-24 11:05:26.8734|23|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'ULogin' of type 'CommonLayer.Model.UserLogin'. 
+2023-01-24 11:05:26.8734|26|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'ULogin' of type 'CommonLayer.Model.UserLogin' ... 
+2023-01-24 11:05:26.8734|27|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'ULogin' of type 'CommonLayer.Model.UserLogin'. 
+2023-01-24 11:05:26.8734|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-01-24 11:05:26.8734|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-01-24 11:05:26.8734|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2023-01-24 11:05:26.8734|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter|The request has model state errors, returning an error response. 
+2023-01-24 11:05:26.8734|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2023-01-24 11:05:26.8734|3|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter'. 
+2023-01-24 11:05:26.8734|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-01-24 11:05:26.8734|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-01-24 11:05:26.8734|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2023-01-24 11:05:26.8734|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2023-01-24 11:05:26.8734|4|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.BadRequestObjectResult. 
+2023-01-24 11:05:26.8734|11|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2023-01-24 11:05:26.8734|4|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation. 
+2023-01-24 11:05:26.8734|9|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types 'application/problem+json, application/problem+xml, application/problem+json, application/problem+xml'. 
+2023-01-24 11:05:26.8734|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/problem+json' to write the response. 
+2023-01-24 11:05:26.8734|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'. 
+2023-01-24 11:05:26.8734|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1I4" sending HEADERS frame for stream ID 1 with length 85 and flags END_HEADERS. 
+2023-01-24 11:05:26.8734|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1I4" sending DATA frame for stream ID 1 with length 247 and flags NONE. 
+2023-01-24 11:05:26.8734|5|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.BadRequestObjectResult. 
+2023-01-24 11:05:26.8734|2|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2023-01-24 11:05:26.8734|3|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2023-01-24 11:05:26.8734|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundooNotesApp.Controllers.UserController.userLogin (FundooNotesApp) in 1.4772ms 
+2023-01-24 11:05:26.8734|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundooNotesApp.Controllers.UserController.userLogin (FundooNotesApp)' 
+2023-01-24 11:05:26.8734|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1I4" sending DATA frame for stream ID 1 with length 0 and flags END_STREAM. 
+2023-01-24 11:05:26.8734|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7102/api/controller/api/Login application/json 51 - 400 - application/problem+json;+charset=utf-8 2.6538ms 
+2023-01-24 11:05:36.8626|6|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMNTOR93P1I4" received FIN. 
+2023-01-24 11:05:36.8631|48|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMNTOR93P1I4" is closed. The last processed stream ID was 1. 
+2023-01-24 11:05:36.8631|7|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMNTOR93P1I4" sending FIN because: "The client closed the connection." 
+2023-01-24 11:05:36.8631|2|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMNTOR93P1I4" stopped. 
