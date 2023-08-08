@@ -1,0 +1,17 @@
+D:\dotnet\FundooNotesApp\RepoLayer\bin\Debug\net6.0\RepoLayer.deps.json
+D:\dotnet\FundooNotesApp\RepoLayer\bin\Debug\net6.0\RepoLayer.runtimeconfig.json
+D:\dotnet\FundooNotesApp\RepoLayer\bin\Debug\net6.0\RepoLayer.dll
+D:\dotnet\FundooNotesApp\RepoLayer\bin\Debug\net6.0\RepoLayer.pdb
+D:\dotnet\FundooNotesApp\RepoLayer\obj\Debug\net6.0\RepoLayer.csproj.AssemblyReference.cache
+D:\dotnet\FundooNotesApp\RepoLayer\obj\Debug\net6.0\RepoLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\dotnet\FundooNotesApp\RepoLayer\obj\Debug\net6.0\RepoLayer.AssemblyInfoInputs.cache
+D:\dotnet\FundooNotesApp\RepoLayer\obj\Debug\net6.0\RepoLayer.AssemblyInfo.cs
+D:\dotnet\FundooNotesApp\RepoLayer\obj\Debug\net6.0\RepoLayer.csproj.CoreCompileInputs.cache
+D:\dotnet\FundooNotesApp\RepoLayer\obj\Debug\net6.0\RepoLayer.dll
+D:\dotnet\FundooNotesApp\RepoLayer\obj\Debug\net6.0\refint\RepoLayer.dll
+D:\dotnet\FundooNotesApp\RepoLayer\obj\Debug\net6.0\RepoLayer.pdb
+D:\dotnet\FundooNotesApp\RepoLayer\obj\Debug\net6.0\RepoLayer.genruntimeconfig.cache
+D:\dotnet\FundooNotesApp\RepoLayer\obj\Debug\net6.0\ref\RepoLayer.dll
+D:\dotnet\FundooNotesApp\RepoLayer\bin\Debug\net6.0\CommonLayer.dll
+D:\dotnet\FundooNotesApp\RepoLayer\bin\Debug\net6.0\CommonLayer.pdb
+D:\dotnet\FundooNotesApp\RepoLayer\obj\Debug\net6.0\RepoLayer.csproj.CopyComplete
