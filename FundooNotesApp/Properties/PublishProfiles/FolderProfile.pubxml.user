@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\IIS\Publish\fundoo</_PublishTargetUrl>
+    <History>True|2023-08-02T05:33:01.1747728Z;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="FundooDB">
+      <Value>Data Source=%28localdb%29\MSSQLLocalDB%3bInitial Catalog=FundooNotesDB%3bIntegrated Security=True</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>
