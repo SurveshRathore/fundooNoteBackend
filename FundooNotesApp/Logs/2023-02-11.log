@@ -1,0 +1,108 @@
+2023-02-11 12:23:43.9291|0|DEBUG|Program|init main 
+2023-02-11 12:24:05.2709|12|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider 
+2023-02-11 12:24:08.8814|1|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting 
+2023-02-11 12:24:11.1677|63|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Rathour\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-02-11 12:24:11.5759|37|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\Rathour\AppData\Local\ASP.NET\DataProtection-Keys\key-1fc0a2f5-3e7d-4b6a-bf39-bc9beac55fd8.xml'. 
+2023-02-11 12:24:15.2532|18|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {1fc0a2f5-3e7d-4b6a-bf39-bc9beac55fd8}. 
+2023-02-11 12:24:15.9032|13|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver|Considering key {1fc0a2f5-3e7d-4b6a-bf39-bc9beac55fd8} with expiration date 2023-03-27 09:25:20Z as default key. 
+2023-02-11 12:24:15.9748|0|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60 
+2023-02-11 12:24:15.9864|51|DEBUG|Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor|Decrypting secret element using Windows DPAPI. 
+2023-02-11 12:24:15.9864|0|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60 
+2023-02-11 12:24:16.0031|4|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC. 
+2023-02-11 12:24:16.0031|3|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC. 
+2023-02-11 12:24:16.0184|2|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider|Using key {1fc0a2f5-3e7d-4b6a-bf39-bc9beac55fd8} as the default key. 
+2023-02-11 12:24:16.4017|65|DEBUG|Microsoft.AspNetCore.DataProtection.Internal.DataProtectionHostedService|Key ring with default key {1fc0a2f5-3e7d-4b6a-bf39-bc9beac55fd8} was loaded during application startup. 
+2023-02-11 12:24:24.3073|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer|Using development certificate: CN=localhost (Thumbprint: A97F343284D0AE9D116BA6CFF6056E23DB0A5CFC) 
+2023-02-11 12:24:25.8273|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7102 
+2023-02-11 12:24:25.9126|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5102 
+2023-02-11 12:24:25.9126|13|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly FundooNotesApp 
+2023-02-11 12:24:25.9126|13|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh 
+2023-02-11 12:24:25.9126|13|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net 
+2023-02-11 12:24:25.9126|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-02-11 12:24:25.9126|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-02-11 12:24:25.9126|0|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\dotnet\FundooNotesApp\FundooNotesApp\ 
+2023-02-11 12:24:25.9126|2|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started 
+2023-02-11 12:24:25.9352|6|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMOBVJ86K575" received FIN. 
+2023-02-11 12:24:25.9636|39|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMOBVJ86K575" accepted. 
+2023-02-11 12:24:25.9636|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMOBVJ86K575" started. 
+2023-02-11 12:24:26.8456|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection. System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-02-11 12:24:29.7025|2|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMOBVJ86K575" stopped. 
+2023-02-11 12:24:29.7941|7|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMOBVJ86K575" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2023-02-11 12:24:35.3159|39|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMOBVJ86K576" accepted. 
+2023-02-11 12:24:35.3159|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMOBVJ86K576" started. 
+2023-02-11 12:24:35.3226|39|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMOBVJ86K577" accepted. 
+2023-02-11 12:24:35.3226|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMOBVJ86K577" started. 
+2023-02-11 12:24:37.5247|6|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMOBVJ86K577" received FIN. 
+2023-02-11 12:24:37.6649|3|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HMOBVJ86K576 established using the following protocol: Tls12 
+2023-02-11 12:24:37.6649|3|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HMOBVJ86K577 established using the following protocol: Tls12 
+2023-02-11 12:24:38.5159|48|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMOBVJ86K577" is closed. The last processed stream ID was 0. 
+2023-02-11 12:24:38.7494|7|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMOBVJ86K577" sending FIN because: "The client closed the connection." 
+2023-02-11 12:24:38.7647|2|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMOBVJ86K577" stopped. 
+2023-02-11 12:24:38.7773|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMOBVJ86K576" sending SETTINGS frame for stream ID 0 with length 18 and flags NONE. 
+2023-02-11 12:24:38.7773|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMOBVJ86K576" sending WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0. 
+2023-02-11 12:24:39.0306|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMOBVJ86K576" received SETTINGS frame for stream ID 0 with length 30 and flags NONE. 
+2023-02-11 12:24:39.0306|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMOBVJ86K576" sending SETTINGS frame for stream ID 0 with length 0 and flags ACK. 
+2023-02-11 12:24:39.0306|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMOBVJ86K576" received WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0. 
+2023-02-11 12:24:39.0306|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMOBVJ86K576" received HEADERS frame for stream ID 1 with length 460 and flags END_STREAM, END_HEADERS, PRIORITY. 
+2023-02-11 12:24:39.3990|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMOBVJ86K576" received SETTINGS frame for stream ID 0 with length 0 and flags ACK. 
+2023-02-11 12:24:39.5243|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7102/swagger/index.html - - 
+2023-02-11 12:24:40.1528|0|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed. 
+2023-02-11 12:24:40.1528|2|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2023-02-11 12:24:40.6169|1000|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/index.html' 
+2023-02-11 12:24:40.6169|2|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints 
+2023-02-11 12:24:42.0802|1|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup is scheduled to include browser refresh script injection. 
+2023-02-11 12:24:42.5403|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMOBVJ86K576" sending HEADERS frame for stream ID 1 with length 66 and flags END_HEADERS. 
+2023-02-11 12:24:44.9166|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMOBVJ86K576" sending DATA frame for stream ID 1 with length 1024 and flags NONE. 
+2023-02-11 12:24:44.9166|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMOBVJ86K576" sending DATA frame for stream ID 1 with length 1024 and flags NONE. 
+2023-02-11 12:24:44.9166|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMOBVJ86K576" sending DATA frame for stream ID 1 with length 1024 and flags NONE. 
+2023-02-11 12:24:44.9166|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMOBVJ86K576" sending DATA frame for stream ID 1 with length 1024 and flags NONE. 
+2023-02-11 12:24:44.9335|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMOBVJ86K576" received WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0. 
+2023-02-11 12:24:44.9335|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMOBVJ86K576" received WINDOW_UPDATE frame for stream ID 1 with length 4 and flags 0x0. 
+2023-02-11 12:24:44.9654|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMOBVJ86K576" sending DATA frame for stream ID 1 with length 995 and flags NONE. 
+2023-02-11 12:24:44.9654|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMOBVJ86K576" sending DATA frame for stream ID 1 with length 65 and flags NONE. 
+2023-02-11 12:24:44.9654|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMOBVJ86K576" sending DATA frame for stream ID 1 with length 16 and flags NONE. 
+2023-02-11 12:24:45.0168|2|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup was updated to include browser refresh script injection. 
+2023-02-11 12:24:45.0168|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMOBVJ86K576" sending DATA frame for stream ID 1 with length 0 and flags END_STREAM. 
+2023-02-11 12:24:45.2641|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7102/swagger/index.html - - - 200 - text/html;charset=utf-8 5627.8023ms 
+2023-02-11 12:24:45.5371|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMOBVJ86K576" received HEADERS frame for stream ID 3 with length 108 and flags END_STREAM, END_HEADERS, PRIORITY. 
+2023-02-11 12:24:45.5371|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMOBVJ86K576" received HEADERS frame for stream ID 5 with length 57 and flags END_STREAM, END_HEADERS, PRIORITY. 
+2023-02-11 12:24:45.5371|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - - 
+2023-02-11 12:24:45.5371|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7102/_vs/browserLink - - 
+2023-02-11 12:24:45.5542|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMOBVJ86K576" sending HEADERS frame for stream ID 3 with length 90 and flags END_HEADERS. 
+2023-02-11 12:24:45.5612|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMOBVJ86K576" sending DATA frame for stream ID 3 with length 11998 and flags NONE. 
+2023-02-11 12:24:45.5612|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMOBVJ86K576" sending DATA frame for stream ID 3 with length 0 and flags END_STREAM. 
+2023-02-11 12:24:45.5612|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7102/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 23.5305ms 
+2023-02-11 12:24:45.9339|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMOBVJ86K576" sending HEADERS frame for stream ID 5 with length 149 and flags END_HEADERS. 
+2023-02-11 12:24:45.9339|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMOBVJ86K576" sending DATA frame for stream ID 5 with length 9986 and flags NONE. 
+2023-02-11 12:24:45.9339|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMOBVJ86K576" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-02-11 12:24:45.9339|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMOBVJ86K576" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-02-11 12:24:45.9339|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMOBVJ86K576" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-02-11 12:24:45.9339|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMOBVJ86K576" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-02-11 12:24:45.9339|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMOBVJ86K576" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-02-11 12:24:45.9339|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMOBVJ86K576" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-02-11 12:24:46.0164|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMOBVJ86K576" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-02-11 12:24:46.0164|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMOBVJ86K576" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-02-11 12:24:46.0164|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMOBVJ86K576" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-02-11 12:24:46.0164|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMOBVJ86K576" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-02-11 12:24:46.0164|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMOBVJ86K576" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-02-11 12:24:46.0164|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMOBVJ86K576" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-02-11 12:24:46.0164|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMOBVJ86K576" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-02-11 12:24:46.0164|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMOBVJ86K576" sending DATA frame for stream ID 5 with length 9975 and flags NONE. 
+2023-02-11 12:24:46.0164|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMOBVJ86K576" sending DATA frame for stream ID 5 with length 0 and flags END_STREAM. 
+2023-02-11 12:24:46.0164|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7102/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 484.5445ms 
+2023-02-11 12:24:46.4612|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMOBVJ86K576" received HEADERS frame for stream ID 7 with length 66 and flags END_STREAM, END_HEADERS, PRIORITY. 
+2023-02-11 12:24:46.4731|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - - 
+2023-02-11 12:24:46.4731|2|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2023-02-11 12:24:46.4731|1000|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/v1/swagger.json' 
+2023-02-11 12:24:46.4731|2|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints 
+2023-02-11 12:24:47.6195|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMOBVJ86K576" sending HEADERS frame for stream ID 7 with length 65 and flags END_HEADERS. 
+2023-02-11 12:24:47.6195|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMOBVJ86K576" sending DATA frame for stream ID 7 with length 15953 and flags NONE. 
+2023-02-11 12:24:47.6195|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMOBVJ86K576" sending DATA frame for stream ID 7 with length 0 and flags END_STREAM. 
+2023-02-11 12:24:47.6195|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7102/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 1147.3067ms 
+2023-02-11 12:24:53.3692|6|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMOBVJ86K576" received FIN. 
+2023-02-11 12:24:53.3692|48|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMOBVJ86K576" is closed. The last processed stream ID was 7. 
+2023-02-11 12:24:53.3692|7|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMOBVJ86K576" sending FIN because: "The client closed the connection." 
+2023-02-11 12:24:53.3692|2|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMOBVJ86K576" stopped. 

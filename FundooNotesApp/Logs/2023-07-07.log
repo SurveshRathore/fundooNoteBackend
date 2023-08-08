@@ -1,0 +1,50 @@
+2023-07-07 07:59:30.1081|39|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMRRM5HIJFLT" accepted. 
+2023-07-07 07:59:30.9558|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMRRM5HIJFLT" started. 
+2023-07-07 07:59:33.3063|3|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HMRRM5HIJFLT established using the following protocol: Tls12 
+2023-07-07 07:59:34.3158|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMRRM5HIJFLT" sending SETTINGS frame for stream ID 0 with length 18 and flags NONE. 
+2023-07-07 07:59:34.3158|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMRRM5HIJFLT" sending WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0. 
+2023-07-07 07:59:34.3158|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMRRM5HIJFLT" received SETTINGS frame for stream ID 0 with length 30 and flags NONE. 
+2023-07-07 07:59:34.3158|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMRRM5HIJFLT" sending SETTINGS frame for stream ID 0 with length 0 and flags ACK. 
+2023-07-07 07:59:34.3158|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMRRM5HIJFLT" received WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0. 
+2023-07-07 07:59:34.3234|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMRRM5HIJFLT" received HEADERS frame for stream ID 1 with length 337 and flags END_STREAM, END_HEADERS, PRIORITY. 
+2023-07-07 07:59:34.9167|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMRRM5HIJFLT" received SETTINGS frame for stream ID 0 with length 0 and flags ACK. 
+2023-07-07 07:59:35.2062|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 OPTIONS https://localhost:7102/api/Note/GetAllNotes - - 
+2023-07-07 07:59:35.2369|2|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2023-07-07 07:59:35.4775|1001|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/Note/GetAllNotes' 
+2023-07-07 07:59:35.4775|1|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint '405 HTTP Method Not Supported' 
+2023-07-07 07:59:35.6312|15|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint. 
+2023-07-07 07:59:35.6508|15|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint. 
+2023-07-07 07:59:35.7069|2|DEBUG|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|The request has an origin header: 'http://localhost:4200'. 
+2023-07-07 07:59:35.7069|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution successful. 
+2023-07-07 07:59:35.7770|1|DEBUG|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|The request is a preflight request. 
+2023-07-07 07:59:35.8514|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMRRM5HIJFLT" sending HEADERS frame for stream ID 1 with length 135 and flags END_STREAM, END_HEADERS. 
+2023-07-07 07:59:35.8724|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 OPTIONS https://localhost:7102/api/Note/GetAllNotes - - - 204 - - 678.7092ms 
+2023-07-07 07:59:35.8724|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMRRM5HIJFLT" received HEADERS frame for stream ID 3 with length 351 and flags END_STREAM, END_HEADERS, PRIORITY. 
+2023-07-07 07:59:35.8921|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7102/api/Note/GetAllNotes application/json - 
+2023-07-07 07:59:36.4194|2|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2023-07-07 07:59:36.4194|1001|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/Note/GetAllNotes' 
+2023-07-07 07:59:36.6100|1005|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'FundooNotesApp.Controllers.NoteController.GetAllNotes (FundooNotesApp)' with route pattern 'api/Note/GetAllNotes' is valid for the request path '/api/Note/GetAllNotes' 
+2023-07-07 07:59:36.6983|1|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'FundooNotesApp.Controllers.NoteController.GetAllNotes (FundooNotesApp)' 
+2023-07-07 07:59:37.2009|15|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint. 
+2023-07-07 07:59:37.2009|15|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint. 
+2023-07-07 07:59:37.2331|2|DEBUG|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|The request has an origin header: 'http://localhost:4200'. 
+2023-07-07 07:59:37.2331|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution successful. 
+2023-07-07 07:59:39.7156|1|INFO|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|Failed to validate the token. Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '06-07-2023 11:42:51', Current time: '07-07-2023 02:29:38'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateJWS(String token, TokenValidationParameters validationParameters, BaseConfiguration currentConfiguration, SecurityToken& signatureValidatedToken, ExceptionDispatchInfo& exceptionThrown)
+--- End of stack trace from previous location ---
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, JwtSecurityToken outerToken, TokenValidationParameters validationParameters, SecurityToken& signatureValidatedToken)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-07-07 07:59:41.0562|7|INFO|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '06-07-2023 11:42:51', Current time: '07-07-2023 02:29:38'. 
+2023-07-07 07:59:41.3516|2|INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user. 
+2023-07-07 07:59:41.3878|12|INFO|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was challenged. 
+2023-07-07 07:59:41.3878|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMRRM5HIJFLT" sending HEADERS frame for stream ID 3 with length 136 and flags END_STREAM, END_HEADERS. 
+2023-07-07 07:59:41.3878|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7102/api/Note/GetAllNotes application/json - - 401 0 - 5496.0637ms 
+2023-07-07 08:41:19.8989|6|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMRRM5HIJFLT" received FIN. 
+2023-07-07 08:41:21.2553|48|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMRRM5HIJFLT" is closed. The last processed stream ID was 3. 
+2023-07-07 08:41:21.2553|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMRRM5HIJFLT" sending GOAWAY frame for stream ID 0 with length 8 and flags 0x0. 
+2023-07-07 08:41:21.2942|2|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMRRM5HIJFLT" stopped. 
+2023-07-07 08:41:21.2942|7|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMRRM5HIJFLT" sending FIN because: "The Socket transport's send loop completed gracefully." 
