@@ -1,0 +1,17 @@
+D:\dotnet\FundooNotesApp\ManagerLayer\bin\Debug\net6.0\ManagerLayer.deps.json
+D:\dotnet\FundooNotesApp\ManagerLayer\bin\Debug\net6.0\ManagerLayer.dll
+D:\dotnet\FundooNotesApp\ManagerLayer\bin\Debug\net6.0\ManagerLayer.pdb
+D:\dotnet\FundooNotesApp\ManagerLayer\obj\Debug\net6.0\ManagerLayer.csproj.AssemblyReference.cache
+D:\dotnet\FundooNotesApp\ManagerLayer\obj\Debug\net6.0\ManagerLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\dotnet\FundooNotesApp\ManagerLayer\obj\Debug\net6.0\ManagerLayer.AssemblyInfoInputs.cache
+D:\dotnet\FundooNotesApp\ManagerLayer\obj\Debug\net6.0\ManagerLayer.AssemblyInfo.cs
+D:\dotnet\FundooNotesApp\ManagerLayer\obj\Debug\net6.0\ManagerLayer.csproj.CoreCompileInputs.cache
+D:\dotnet\FundooNotesApp\ManagerLayer\obj\Debug\net6.0\ManagerLayer.dll
+D:\dotnet\FundooNotesApp\ManagerLayer\obj\Debug\net6.0\refint\ManagerLayer.dll
+D:\dotnet\FundooNotesApp\ManagerLayer\obj\Debug\net6.0\ManagerLayer.pdb
+D:\dotnet\FundooNotesApp\ManagerLayer\obj\Debug\net6.0\ref\ManagerLayer.dll
+D:\dotnet\FundooNotesApp\ManagerLayer\bin\Debug\net6.0\CommonLayer.dll
+D:\dotnet\FundooNotesApp\ManagerLayer\bin\Debug\net6.0\RepoLayer.dll
+D:\dotnet\FundooNotesApp\ManagerLayer\bin\Debug\net6.0\RepoLayer.pdb
+D:\dotnet\FundooNotesApp\ManagerLayer\bin\Debug\net6.0\CommonLayer.pdb
+D:\dotnet\FundooNotesApp\ManagerLayer\obj\Debug\net6.0\ManagerLayer.csproj.CopyComplete
